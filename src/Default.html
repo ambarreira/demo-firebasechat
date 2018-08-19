@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo - Open Firebase Chat</title>
+    <!-- START JS Librarys-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <!--END JS Librarys-->
+    <script src="app.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3">
+                <textarea id="chatBox" rows="30" style="width:450px;" readonly="readonly"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Username
+            </td>
+            <td>
+                Message
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="userbox" type="text" style="width:100px;"/>
+            </td>
+            <td>
+                <input id="textbox" type="text" style="width:300px;" />
+            </td>
+            <td>
+                <input id="Submit1" type="submit" value=" > " onclick="SendMessage();" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                <br />
+                <br />
+                <br />
+                <input id="Submit1" type="submit" value="Clear Chat DB" onclick="ClearAllMessages();" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
